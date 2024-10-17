@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My JS skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task 1</h1>
+    <div class="knopki">
+        <div class="imag">
+        <button onclick="image_change1()">Change the image</button>
+        <img id="img_1" src="est.png" alt="Image 1">
+        <button onclick="image_change2()">Return the image</button>
+        </div>
+
+        <button onclick="cahnge_background()">Change background color</button>
+
+        <button onclick="showAlert()">Click me</button>
+    </div>
+
+    <div class="separator"></div>
+
+    <h1>Task 2</h1>
+    <div class="todo-cont">
+        <h1>To-do list</h1>
+        <input type="text" id="taskInput" placeholder="Write your task here">
+        <button onclick="addTask()">Add task</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="separator"></div>
+    
+    <h1>Task 3</h1>
+    <div class="sorter">
+        <h1>Number sorting tool</h1>
+        <input type="text" id="numberInput" placeholder="Write number separated by comma">
+        <button onclick="sortNums('asc')">Ascending</button>
+        <button onclick="sortNums('desc')">Descending</button>
+        <h2>Sorted numbers: </h2>
+        <div id="sortedNumbers"></div>
+    </div>
+
+    <div class="separator"></div>
+
+    <h1>Task 4</h1>
+    <div class="calculator">
+        <h2>First number: <input type="number" id="num_1"></h2>
+        <h2>Second number: <input type="number" id="num_2"></h2>
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate('/')">/</button>
+        <button onclick="calculate('sqrt')">Square root (1st number)</button>
+        <button onclick="calculate('square')">Square (1st number)</button>
+        <h3>Result: <span id="answer"></span></h3>
+    </div>
+    
+    <div class="separator"></div>
+
+    <h1>Task 5</h1>
+    <div class="tax-calculator">
+        <h2>Write price of a car:</h2>
+        <input type="number" id="Price" placeholder="Type price">
+        <button onclick="calculateTax()">Calculate tax</button>
+        <h3>Tax is: <span id="taxAmount"></span></h3>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
